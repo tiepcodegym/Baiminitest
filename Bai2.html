@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2><i id="a1"></i></h2>
+<script>
+    let count = 0;
+    let number = 2;
+    let sum = 0;
+    while (count < 25) {
+        let check = true
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                check = false
+                break
+            }
+        }
+        if (check) {
+            sum = sum + number;
+            document.getElementById("a1").innerHTML="Tổng 25 SNT là "+sum
+                count++
+        }
+        number++
+    }
+</script>
+</body>
+</html>

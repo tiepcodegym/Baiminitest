@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+
+<script>
+    function kiemTra() {
+        let arr=[]
+        for(let i=0;i<20;i++){
+            arr[i]=+prompt("Nhập số vào mảng ")
+        }document.write("Mảng đã tạo là ["+arr+"]<br>")
+        let sum=0
+        for(i=0;i<arr.length;i++){
+            if(arr[i]%2!=0){
+                sum=sum+arr[i]
+            }
+        }document.write("Tổng các phần tử lẻ là "+sum)
+    }
+    kiemTra()
+
+</script>
+
+</body>
+</html>
